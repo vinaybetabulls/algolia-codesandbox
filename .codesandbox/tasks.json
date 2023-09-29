@@ -15,7 +15,10 @@
     },
     "cd application && yarn start": {
       "name": "Run Application",
-      "command": "cd application && yarn start"
+      "command": "cd application && yarn start",
+      "preview": {
+        "port": 3000
+      }
     }
   }
 }
