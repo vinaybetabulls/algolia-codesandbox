@@ -1,0 +1,21 @@
+{
+  // These tasks will run in order when initializing your CodeSandbox project.
+  "setupTasks": [],
+
+  // These tasks can be run from CodeSandbox. Running one will open a log in the app.
+  "tasks": {
+    "cd application && yarn install": {
+      "name": "Install Dependecies",
+      "command": "cd application && yarn install",
+      "runAtStart": true
+    },
+    "cd application && yarn build": {
+      "name": "Build",
+      "command": "cd application && yarn build"
+    },
+    "cd application && yarn start": {
+      "name": "Run Application",
+      "command": "cd application && yarn start"
+    }
+  }
+}
