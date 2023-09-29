@@ -1,0 +1,9 @@
+*.d.ts
+*.js
+.next
+**/cdk.out/**
+packages/ui-components/build
+test-results
+package-lock.json
+build
+

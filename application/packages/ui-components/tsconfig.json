@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+      "outDir": "build",
+      "target": "es5",
+      "allowJs": true,
+      "skipLibCheck": true,
+      "esModuleInterop": true,
+      "allowSyntheticDefaultImports": true,
+      "strict": true,
+      "forceConsistentCasingInFileNames": true,
+      "noFallthroughCasesInSwitch": true,
+      "module": "CommonJS",
+      "moduleResolution": "node",
+      "resolveJsonModule": true,
+      "isolatedModules": true,
+      "jsx": "react-jsx",
+      "declaration": true,
+      "declarationMap": true,
+      "lib": ["dom", "dom.iterable", "esnext"]
+    },
+    "exclude": ["src/**/*.stories.*"],
+    "include": ["src"]
+  }
+  

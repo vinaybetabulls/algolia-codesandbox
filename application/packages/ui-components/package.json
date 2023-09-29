@@ -1,0 +1,72 @@
+{
+  "name": "@alg/ui-components",
+  "version": "0.1.0",
+  "private": true,
+  "main": "build/components/index.js",
+  "dependencies": {
+    "algoliasearch": "^4.20.0",
+    "react-instantsearch": "^7.1.0",
+    "yup": "^0.32.9"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "npx tsc",
+    "build:watch": "npx tsc --watch",
+    "test": "jest",
+    "test:ci": "jest --ci --coverage --reporters=default --reporters=jest-junit --coverageReporters=cobertura --coverageReporters=html --coverageReporters=lcov --testResultsProcessor=jest-sonar-reporter --watchAll=false",
+    "prettier": "prettier --check \"**/*.{js,ts,tsx,json}\"",
+    "prettify": "prettier --write \"**/*.{js,ts,tsx,json}\"",
+    "lint": "eslint \"**/*.{js,ts,tsx}\" --max-warnings=0",
+    "fix-linting": "eslint \"**/*.{js,ts,tsx}\" --fix",
+    "validate": "yarn prettier && yarn lint && yarn build && yarn test",
+    "prepare": "cd ../../../ && husky install"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "peerDependencies": {
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
+  },
+  "devDependencies": {
+    "@testing-library/dom": "^8.1.0",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^12.0.0",
+    "@testing-library/react-hooks": "^8.0.1",
+    "@testing-library/user-event": "^13.2.1",
+    "@types/jest": "^27.0.0",
+    "@types/node": "^16.6.0",
+    "@types/react": "^17.0.17",
+    "@types/react-dom": "^17.0.9",
+    "babel-jest": "^27.0.6",
+    "eslint-config-next": "^11.1.0",
+    "eslint-config-prettier": "^8.3.0",
+    "jest": "^27.0.6",
+    "jss-plugin-extend": "^10.7.1",
+    "next": "^12.3.4",
+    "node-sass": "^8.0.0",
+    "prettier": "^2.3.2",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-scripts": "4.0.3",
+    "typescript": "^4.3.5"
+  },
+  "msw": {
+    "workerDirectory": "public"
+  }
+}
